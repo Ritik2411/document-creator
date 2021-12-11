@@ -1,0 +1,48 @@
+.doclist{
+    width: 40%;
+}
+
+.search-doc{
+    width: 100%;
+    padding: 5px 0px 5px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5ef;
+    color: gray;
+}
+
+.search-doc:focus{
+    outline: none;
+}
+
+.list-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #f2f2f2;
+    align-items: center;
+}
+
+.list-container-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.span-title{
+    color:#2196F3;
+    cursor:pointer;
+}
+
+.list-container-item:hover{
+    background-color: azure;
+}
+
+@media screen and (max-width:870px) {
+    .doclist{
+        width: 95%;
+    }
+}

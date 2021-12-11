@@ -1,0 +1,9 @@
+.doc-container{
+    padding: 10px;
+}
+
+.doc-name{
+    font-weight: bold;
+    font-size: 20px;
+    position: sticky;
+}

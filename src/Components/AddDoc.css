@@ -1,0 +1,44 @@
+.add-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-sub-container{
+    width:50%;
+    background-color: #f2f5f3;
+    padding:20px 20px;
+    border-radius:5px; 
+}
+
+.new-doc-header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.new-doc-add{
+    height: 200px;
+    width: 150px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+}
+
+.new-doc-add:hover{
+    cursor: pointer;
+    border: 2px solid lightblue;
+}
+
+@media screen and (max-width:870px){
+    .add-sub-container{
+        width: 80%;
+    }
+}

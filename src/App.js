@@ -1,8 +1,6 @@
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Header from './Components/Header';
-import AddDoc from './Components/AddDoc';
-import Doclist from './Components/Doclist';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import { useDispatch } from 'react-redux';
@@ -32,7 +30,6 @@ function App() {
 
   return (
       <BrowserRouter>
-        {}
         <Header/>
         <Routes>
           <Route path="/" element={<Home/> }/>

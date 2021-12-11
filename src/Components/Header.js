@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import SearchIcon from '@mui/icons-material/Search';
-import AppsIcon from '@mui/icons-material/Apps';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import React from 'react'
 import './Header.css'
-import { IconButton } from '@mui/material';
-import db, { auth, provider } from '../firebase';
+import { auth, provider } from '../firebase';
 import { signInWithPopup,signOut } from 'firebase/auth';
 import { useSelector } from 'react-redux';
 import {Link,useNavigate} from 'react-router-dom'
@@ -36,7 +32,7 @@ function Header() {
             <div className="header-container">
                 <Link to='/' style={{textDecoration:'none'}}>
                 <div className="header-title">
-                        <img src="https://img.icons8.com/color/48/000000/google-docs--v1.png" alt='no image' height="33px"/>    
+                        <img src="https://img.icons8.com/color/48/000000/google-docs--v1.png" alt='no source' height="33px"/>    
                         <p className="header-title-name">Document Creator</p>
                     </div>
                 </Link>

@@ -1,9 +1,8 @@
 import React, { useState,useEffect } from 'react'
-import FolderIcon from '@mui/icons-material/Folder';
 import './Doclist.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useSelector } from 'react-redux';
-import { collection, onSnapshot,getDoc,where,query,doc,deleteDoc } from '@firebase/firestore';
+import { collection, onSnapshot,doc,deleteDoc } from '@firebase/firestore';
 import db from '../firebase';
 import ArticleIcon from '@mui/icons-material/Article';
 import { useNavigate } from 'react-router';
@@ -18,7 +17,7 @@ function Doclist() {
     const [search,setSearch] = useState('') 
 
     useEffect(async()=>{
-        if(state.user ==undefined || state.user ==null){
+        if(state.user === undefined || state.user === null){
             setData([])
         }
         else{

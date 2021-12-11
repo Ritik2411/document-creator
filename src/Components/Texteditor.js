@@ -3,7 +3,7 @@ import { Editor } from 'react-draft-wysiwyg'
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
 import './Texteditor.css'
 import { EditorState,convertFromRaw,convertToRaw } from 'draft-js'
-import { setDoc, doc, getDoc, onSnapshot } from '@firebase/firestore'
+import { setDoc, doc, getDoc } from '@firebase/firestore'
 import { useSelector } from 'react-redux'
 import db from '../firebase'
 
@@ -14,7 +14,7 @@ function Texteditor({id}) {
     const [editorstate,setEditorstate] = useState(EditorState.createEmpty())
     
     useEffect(async()=>{
-        if(state.user == undefined || state.user == null){
+        if(state.user === undefined || state.user === null){
             console.log("User not found")
         }
         else{

@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './AddDoc.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AddIcon from '@mui/icons-material/Add';
 import db from '../firebase';
-import { doc, serverTimestamp, addDoc, collection } from '@firebase/firestore';
+import { serverTimestamp, addDoc, collection } from '@firebase/firestore';
 import { useSelector } from 'react-redux';
 
 function AddDoc() {
